@@ -1,0 +1,36 @@
+{
+  "name": "recipes",
+  "plural": "recipes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "ingredients": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "steps": {
+      "type": "string",
+      "required": true
+    },
+    "place": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
